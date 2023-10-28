@@ -28,8 +28,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        useMaterial3: true, colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue).copyWith(background: Colors.blueGrey),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -110,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: Theme.of(context).textTheme.displayMedium,
             ),
           ],
         ),
@@ -118,7 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.account_tree),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
